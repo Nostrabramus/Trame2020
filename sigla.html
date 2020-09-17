@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+      Sigla - Trame Indipendenti
+    </title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/sigla.css">
+
+    <script src="assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-16">
+                <div class="sigla">
+                    <img src="assets/img/logo-trame-footer.png" class="logo animate__animated animate__backInDown">
+                    <h1 class="title animate__animated animate__backInUp">Trame Indipendenti</h1>
+                    <div class="row subtitle"></div>
+                    <div class="row incoop"></div>
+                    <div class="row partnerbox">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="cover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            $('.incoop').html(
+                '<h2 class="subtitle animate__animated animate__backInLeft">festival internazionale del cortometraggio indipendente</h2>' +
+                '<h2 class="subtitle animate__animated animate__backInRight">international indipendent short film festival</h2>'
+            );
+        }, 2000);
+        setTimeout(function(){
+            $('.incoop').html();
+        }, 5000);
+        setTimeout(function(){
+            $('.incoop').html(
+                '<h2 class="collaboration animate__animated animate__backInUp">in collaborazione con</h2>'
+            );
+        }, 5100);
+        setTimeout(function(){
+            $('.partnerbox').html(
+                '<div class="col-lg-8">' +
+                '<h3 class="partner animate__animated animate__backInLeft">Arsenale Cinema</h3>' +
+                '</div>' +
+                '<div class="col-lg-8">' +
+                '<h3 class="partner animate__animated animate__backInRight">Cinema Caffè Lanteri</h3>' +
+                '</div>'
+            );
+        }, 6000);
+    </script>
+</body>
+
+</html>

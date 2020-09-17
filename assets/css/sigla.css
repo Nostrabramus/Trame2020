@@ -1,15 +1,14 @@
 body {
     font-family: Impact, Charcoal, sans-serif;
     font-weight: 400;
-    background-color: #981c1f;
-    background-image: url('../img/logo-trame.png');
-    background-size: 150px;
+    background-color: #333333;
     color: #eeeeee;
     overflow: hidden;
 }
 
-.finalist {
-    margin: 150px 0;
+.sigla {
+    margin: 0;
+    text-align: center;
 }
 
 .cover {
@@ -61,30 +60,34 @@ body {
     animation-name: dissolve;
 }
 
-.finalist .poster {
-    float: left;
-    margin-right: 50px;
-    -webkit-box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.75);
+.sigla .logo {
+    position: relative;
+    margin: 20px auto 0;
 }
 
-.finalist .title {
+.sigla .title {
     font-size: 72px;
     font-style: italic;
     margin-bottom: 48px;
-    margin-top: 0;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     letter-spacing: 2px;
 }
 
-.finalist .director {
+.sigla .subtitle {
     font-size: 60px;
     margin-bottom: 0;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     letter-spacing: 2px;
 }
 
-.finalist .country {
+.sigla .collaboration {
+    font-size: 60px;
+    margin-bottom: 0;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+}
+
+.sigla .partner {
     font-size: 60px;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     letter-spacing: 2px;
@@ -119,10 +122,10 @@ body {
     top: 0;
     left: -50%;
     background-color: #000000;
-    -webkit-animation-duration: 8s;
-    animation-duration: 8s;
-    -webkit-animation-duration: calc(var(--animate-duration) * 10);
-    animation-duration: calc(var(--animate-duration) * 10);
+    -webkit-animation-duration: 38s;
+    animation-duration: 38s;
+    -webkit-animation-duration: calc(var(--animate-duration) * 38);
+    animation-duration: calc(var(--animate-duration) * 38);
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-name: cover;
