@@ -24,11 +24,19 @@
         <div class="row">
             <div class="col-lg-16">
                 <div class="sigla">
-                    <img src="assets/img/logo-trame-footer.png" class="logo animate__animated animate__backInDown">
-                    <h1 class="title animate__animated animate__backInUp">Trame Indipendenti</h1>
-                    <div class="row subtitle"></div>
-                    <div class="row incoop"></div>
+                    <div class="row logo"></div>
+                    <div class="clearfix"></div>
+                    <h1 class="title animate__animated animate__bounceInLeft">Trame</h1><h1 class="title">&nbsp;</h1><h1 class="title animate__animated animate__bounceInRight">Indipendenti</h1>
+                    <div class="row incoop">
+                        <div class="subtitle1"></div>
+                        <div class="subtitle2"></div>
+                    </div>
                     <div class="row partnerbox">
+                        <div class="col-lg-1"></div>
+                        <div class="partnerbox1 col-lg-5"></div>
+                        <div class="partnerbox2 col-lg-3"></div>
+                        <div class="partnerbox3 col-lg-5"></div>
+                        <div class="col-lg-2"></div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="cover"></div>
@@ -39,29 +47,43 @@
 
     <script>
         setTimeout(function(){
-            $('.incoop').html(
-                '<h2 class="subtitle animate__animated animate__backInLeft">festival internazionale del cortometraggio indipendente</h2>' +
-                '<h2 class="subtitle animate__animated animate__backInRight">international indipendent short film festival</h2>'
+            $('.logo').html(
+                '<img src="assets/img/logo-trame-footer.png" class="logo animate__animated animate__backInUp">'
+            );
+        }, 1000);
+        setTimeout(function(){
+            $('.subtitle1').html(
+                '<h2 class="subtitle animate__animated animate__bounceInLeft">festival internazionale del cortometraggio indipendente</h2>'
             );
         }, 2000);
         setTimeout(function(){
+            $('.subtitle2').html(
+                '<h2 class="subtitle animate__animated animate__bounceInRight">international indipendent short film festival</h2>'
+            );
+        }, 2400);
+        setTimeout(function(){
             $('.incoop').html();
-        }, 5000);
+        }, 5900);
         setTimeout(function(){
             $('.incoop').html(
                 '<h2 class="collaboration animate__animated animate__backInUp">in collaborazione con</h2>'
             );
-        }, 5100);
-        setTimeout(function(){
-            $('.partnerbox').html(
-                '<div class="col-lg-8">' +
-                '<h3 class="partner animate__animated animate__backInLeft">Arsenale Cinema</h3>' +
-                '</div>' +
-                '<div class="col-lg-8">' +
-                '<h3 class="partner animate__animated animate__backInRight">Cinema Caffè Lanteri</h3>' +
-                '</div>'
-            );
         }, 6000);
+        setTimeout(function(){
+            $('.partnerbox1').html(
+                '<div class="partner animate__animated animate__bounceInUp"><img src="assets/img/logo-cinema-arsenale.png"></div>'
+            );
+        }, 6900);
+        setTimeout(function(){
+            $('.partnerbox2').html(
+                '<div class="partner animate__animated animate__bounceInUp"><img src="assets/img/logo-festival-nostalgia.png"></div>'
+            );
+        }, 7800);
+        setTimeout(function(){
+            $('.partnerbox3').html(
+                '<div class="partner animate__animated animate__bounceInUp"><img src="assets/img/logo-cinema-lanteri.png"></div>'
+            );
+        }, 8700);
     </script>
 </body>
 

@@ -1,9 +1,16 @@
+html {
+}
+
 body {
     font-family: Impact, Charcoal, sans-serif;
     font-weight: 400;
-    background-color: #333333;
     color: #eeeeee;
     overflow: hidden;
+    background: url(../img/bg-sigla.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .sigla {
@@ -63,34 +70,63 @@ body {
 .sigla .logo {
     position: relative;
     margin: 20px auto 0;
+    height: 180px;
 }
 
 .sigla .title {
+    display: inline-block;
+    color: #981c1f;
     font-size: 72px;
-    font-style: italic;
     margin-bottom: 48px;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 0 rgba(255,255,255,1),-1px 1px 0 rgba(255,255,255,1),1px -1px 0 rgba(255,255,255,1),-1px -1px 0 rgba(255,255,255,1), 1px 1px 3px rgba(0,0,0,0.75);
     letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .sigla .subtitle {
-    font-size: 60px;
+    font-size: 40px;
+    font-style: italic;
+    color: #eeeeee;
     margin-bottom: 0;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
     letter-spacing: 2px;
 }
 
 .sigla .collaboration {
-    font-size: 60px;
-    margin-bottom: 0;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     letter-spacing: 2px;
 }
 
-.sigla .partner {
+.sigla .partnerbox {
+    text-align: center;
     font-size: 60px;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+.sigla .partnerbox1 {
+    text-align: right;
+}
+
+.sigla .partnerbox2 {
+    text-align: center;
+}
+
+.sigla .partnerbox3 {
+    text-align: left;
+}
+
+.sigla div.partner {
+    display: inline-block;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #981c1f;
 }
 
 @-webkit-keyframes cover {
@@ -122,10 +158,8 @@ body {
     top: 0;
     left: -50%;
     background-color: #000000;
-    -webkit-animation-duration: 38s;
-    animation-duration: 38s;
-    -webkit-animation-duration: calc(var(--animate-duration) * 38);
-    animation-duration: calc(var(--animate-duration) * 38);
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-name: cover;
