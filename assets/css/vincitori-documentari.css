@@ -254,3 +254,9 @@ body {
     top: 300px;
     right: 200px;
 }
+.topcenter {
+    position: fixed;
+    top: 300px;
+    right: 600px;
+}
+
