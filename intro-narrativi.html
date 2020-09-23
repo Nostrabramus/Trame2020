@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+      Sigla - Trame Indipendenti
+    </title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/intro.css">
+
+    <script src="assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-16">
+                <div class="sigla">
+                    <div class="row logo"></div>
+                    <div class="clearfix"></div>
+                    <h1 class="title animate__animated animate__bounceInLeft">Trame</h1><h1 class="title">&nbsp;</h1><h1 class="title animate__animated animate__bounceInRight">Indipendenti</h1>
+                    <div class="row incoop">
+                        <div class="subtitle1"></div>
+                        <div class="subtitle2"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="cover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            $('.logo').html(
+                '<img src="assets/img/logo-trame-footer.png" class="logo animate__animated animate__backInUp">'
+            );
+        }, 1000);
+        setTimeout(function(){
+            $('.subtitle1').html(
+                '<h2 class="subtitle animate__animated animate__bounceInLeft">categoria narrativi</h2>'
+            );
+        }, 2000);
+        setTimeout(function(){
+            $('.subtitle2').html(
+                '<h2 class="subtitle animate__animated animate__bounceInRight">narrative category</h2>'
+            );
+        }, 2400);
+        setTimeout(function(){
+            $('.category').html();
+        }, 5900);
+    </script>
+</body>
+
+</html>
