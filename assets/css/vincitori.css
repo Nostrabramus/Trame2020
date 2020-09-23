@@ -73,14 +73,17 @@ body {
     height: 180px;
 }
 
+.vincitori .categoria {
+    padding-top: 20px;
+}
+
 .vincitori .title {
-    display: inline-block;
     color: #981c1f;
-    font-size: 72px;
-    margin-bottom: 48px;
+    font-size: 48px;
     text-shadow: 1px 1px 0 rgba(255,255,255,1),-1px 1px 0 rgba(255,255,255,1),1px -1px 0 rgba(255,255,255,1),-1px -1px 0 rgba(255,255,255,1), 1px 1px 3px rgba(0,0,0,0.75);
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin: 40px 0 20px 20px;
+    text-align: left;
     text-transform: uppercase;
 }
 
@@ -166,4 +169,88 @@ body {
     animation-name: cover;
 }
 
+.nomination {
+    margin-top: 20px;
+}
 
+.movieCard {
+    display: inline-block;
+    width: 280px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    margin: 30px;
+}
+
+.movieCard .left {
+    width: 100px;
+    float: left;
+}
+
+.movieCard .right {
+    width: 179px;
+    height: 100%;
+    float: left;
+    border-left: 1px dotted #333;
+    padding: 30px 10px;
+}
+
+.movieCard img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movieCard .card-title {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #981c1f;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.movieCard.big {
+    width: 400px;
+    height: 210px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.movieCard.big .left {
+    width: 150px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.movieCard.big .right {
+    width: 249px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.movieCard.big .card-title {
+    font-size: 36px;
+    line-height: 36px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.topleft {
+    position: fixed;
+    top: 300px;
+    left: 200px;
+}
+.topright {
+    position: fixed;
+    top: 300px;
+    right: 200px;
+}
