@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+      Vincitori Documentari - Trame Indipendenti
+    </title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vincitori-animazioni.css">
+
+    <script src="assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-16">
+                <div class="vincitori">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="logo">
+                                <img src="assets/img/logo-trame-footer.png" class="logo animate__animated animate__backInUp">
+                            </div>
+                        </div>
+                        <div class="col-lg-11 categoria">
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="row nomination">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            $('.col-lg-11').append(
+                '<h1 class="title animate__animated animate__bounceInRight">categoria animazioni</h1>'
+            );
+        }, 1000);
+        setTimeout(function(){
+            $('.categoria').append(
+                '<h1 class="title animate__animated animate__bounceInRight">animation category</h1>'
+            );
+        }, 1500);
+        setTimeout(function(){
+            $('.nomination').append(
+                '<div class="col-lg-5">' +
+                '<div class="movieCard movie1 animate__animated animate__flipInY">' +
+                '<div class="left">' +
+                '<img src="assets/locandine/across-the-universe.jpg">' +
+                '</div>' +
+                '<div class="right">' +
+                '<h5 class="card-title">Across the universe</h5>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        }, 2500);
+        setTimeout(function(){
+            $('.nomination').append(
+                '<div class="col-lg-5">' +
+                '<div class="movieCard movie2 animate__animated animate__flipInY">' +
+                '<div class="left">' +
+                '<img src="assets/locandine/malakout.jpg">' +
+                '</div>' +
+                '<div class="right">' +
+                '<h5 class="card-title">Malakout</h5>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        }, 3000);
+        setTimeout(function(){
+            $('.nomination').append(
+                '<div class="col-lg-5">' +
+                '<div class="movieCard movie3 animate__animated animate__flipInY">' +
+                '<div class="left">' +
+                '<img src="assets/locandine/il-tuffo-di-marianna.jpg">' +
+                '</div>' +
+                '<div class="right">' +
+                '<h5 class="card-title">Il tuffo di Marianna</h5>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        }, 3500);
+        setTimeout(function(){
+            $('.nomination').append(
+                '<div class="col-lg-7">' +
+                '<div class="movieCard movie4 animate__animated animate__flipInY">' +
+                '<div class="left">' +
+                '<img src="assets/locandine/muedra.jpg">' +
+                '</div>' +
+                '<div class="right">' +
+                '<h5 class="card-title">Muedra</h5>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        }, 4000);
+        setTimeout(function(){
+            $('.nomination').append(
+                '<div class="col-lg-1"></div>' +
+                '<div class="col-lg-7">' +
+                '<div class="movieCard movie5 animate__animated animate__flipInY">' +
+                '<div class="left">' +
+                '<img src="assets/locandine/storie-di-plastica.jpg">' +
+                '</div>' +
+                '<div class="right">' +
+                '<h5 class="card-title">Storie di plastica</h5>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        }, 4500);
+        setTimeout(function(){
+            $('.nomination').append(
+                '<div class="col-lg-7">' +
+                '<div class="movieCard movie6 animate__animated animate__flipInY">' +
+                '<div class="left">' +
+                '<img src="assets/locandine/the-fox-of-the-palmgrove.jpg">' +
+                '</div>' +
+                '<div class="right">' +
+                '<h5 class="card-title">The fox of the plamgrove</h5>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        }, 5000);
+        setTimeout(function(){
+            $('.nomination').append(
+                '<div class="col-lg-1"></div>' +
+                '<div class="col-lg-7">' +
+                '<div class="movieCard movie7 animate__animated animate__flipInY">' +
+                '<div class="left">' +
+                '<img src="assets/locandine/dodici-minuti-di-pioggia.jpg">' +
+                '</div>' +
+                '<div class="right">' +
+                '<h5 class="card-title">Dodici minuti di pioggia</h5>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        }, 5500);
+
+        window.onkeypress = function(event) {
+            if (event.keyCode == 49) {
+                setTimeout(function(){
+                    $('.movie7').removeClass('animate__flipInY').addClass('animate__hinge');
+                }, 1000);
+                setTimeout(function(){
+                    $('.movie3').removeClass('animate__flipInY').addClass('animate__hinge');
+                }, 3000);
+                setTimeout(function(){
+                    $('.movie5').removeClass('animate__flipInY').addClass('animate__hinge');
+                }, 5000);
+            }
+            if (event.keyCode == 50) {
+                setTimeout(function(){
+                    $('.movie1').removeClass('animate__flipInY').addClass('animate__hinge');
+                }, 1000);
+                setTimeout(function(){
+                    $('.movie4').removeClass('animate__flipInY').addClass('animate__hinge');
+                }, 3000);
+                setTimeout(function(){
+                    $('.movie2').addClass('big topleft');
+                    $('.movie6').addClass('big topright');
+                }, 5000);
+            }
+            if (event.keyCode == 51) {
+                setTimeout(function(){
+                    $('.movie6').removeClass('animate__flipInY').addClass('animate__hinge');
+                }, 1000);
+                setTimeout(function(){
+                    $('.movie2').removeClass('topright').addClass('topcenter');
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+
+</html>
