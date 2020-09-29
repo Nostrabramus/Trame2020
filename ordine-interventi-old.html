@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+      Sigla - Trame Indipendenti
+    </title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/ordine-interventi.css">
+
+    <script src="assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-16">
+                <div class="sigla">
+                    <div class="logo"><img src="assets/img/logo-tra-bianco-nobg.png" class="logo animate__animated animate__backInRight"></div>
+                    <h1 class="title animate__animated animate__backInLeft">Teatro Rossi Aperto</h1>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <textarea></textarea>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="counterBox">
+                                <div class="counter animate__animated animate__flipInX hide">
+                                    <span id="time">5:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onkeypress = function(event) {
+            if (event.keyCode == 49) {
+                $('.counterBox').removeClass('hide');
+
+                setTimeout(function(){
+                    var durataVotazioni = 60 * 5,
+                        display = document.querySelector('#time');
+                    startTimer(durataVotazioni, display);
+                }, 500);
+
+                var movieCounter = 0;
+                setInterval(function () {
+                    movieCounter++;
+                    $('.hide').first().removeClass('hide').addClass("animate__animated animate__flipInX");
+                }, 500);
+            }
+        }
+    </script>
+</body>
+
+</html>

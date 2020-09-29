@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+        Votazioni - Trame Indipendenti
+    </title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/ordine-interventi.css">
+
+    <script src="assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-16">
+            <div class="interventi">
+                <div class="logo"><img src="assets/img/logo-tra-bianco-nobg.png" class="logo animate__animated animate__backInRight"></div>
+                <h1 class="title animate__animated animate__backInLeft">Teatro Rossi Aperto</h1>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <input type="text" id="persona" value="" size="38">
+                        <div class="ordine-interventi">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="counterBox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+    window.onkeypress = function(event) {
+        if (event.keyCode == 48) {
+
+            $('.ordine-interventi p').first().remove();
+
+            $('.counterBox').html(
+                '<div class="counter animate__animated animate__flipInX">' +
+                '<span id="time">05:00</span>' +
+                '</div>'
+            );
+
+            var durataVotazioni = 60 * 5,
+                display = document.querySelector('#time');
+            startTimer(durataVotazioni, display);
+
+            var movieCounter = 0;
+            setInterval(function () {
+                movieCounter++;
+                $('.hide').first().removeClass('hide').addClass("animate__animated animate__flipInX");
+            }, 500);
+
+            $('#persona').val('');
+
+        }
+
+        if (event.keyCode == 13) {
+            var persona = $("#persona").val();
+            $('.ordine-interventi').append('<p>' + persona + '</p>');
+            $('#persona').val('');
+        }
+    }
+
+</script>
+</body>
+
+</html>

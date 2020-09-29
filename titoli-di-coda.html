@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+      Sigla - Trame Indipendenti
+    </title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/titoli-di-coda.css">
+
+    <script src="assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-16">
+                <div class="sigla">
+                    <div class="row logo"></div>
+                    <div class="clearfix"></div>
+                    <h1 class="title animate__animated animate__bounceInLeft">Trame</h1><h1 class="title">&nbsp;</h1><h1 class="title animate__animated animate__bounceInRight">Indipendenti</h1>
+                    <div class="row titoli">
+                        <div class="role"></div>
+                        <div class="person"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            $('.logo').html(
+                '<img src="assets/img/logo-trame-footer.png" class="logo animate__animated animate__backInUp">'
+            );
+        }, 1000);
+
+        window.onkeypress = function(event) {
+            if (event.keyCode == 49) {
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">direzione artistica</h2>'
+                    );
+                }, 0);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Abramo Tesoro</h2>'
+                    );
+                }, 500);
+            }
+            if (event.keyCode == 50) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">regia</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Marco Valtriani</h2>'
+                    );
+                }, 1250);
+            }
+            if (event.keyCode == 51) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">aiuto regia e tecnica</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Maurizio Gelli</h2>'
+                    );
+                }, 1250);
+            }
+            if (event.keyCode == 52) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">cameraman</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Carlo Peccia</h2>'
+                    );
+                }, 1250);
+            }
+            if (event.keyCode == 53) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">sottotitoli</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Marco Valtriani</h2>'
+                    );
+                }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">Veronika Chiaffrino</h2>'
+                    );
+                }, 1500);
+            }
+            if (event.keyCode == 54) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">montaggio</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Marco Valtriani</h2>'
+                    );
+                }, 1250);
+            }
+            if (event.keyCode == 55) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">tecnico audio</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Maurizio Gelli</h2>'
+                    );
+                }, 1250);
+            }
+            if (event.keyCode == 56) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">grafica e animazioni</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Abramo Tesoro</h2>'
+                    );
+                }, 1250);
+            }
+            if (event.keyCode == 57) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">comunicazione e prenotazioni</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Ivana Cappucci</h2>'
+                    );
+                }, 1250);
+            }
+            if (event.keyCode == 48) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">allestimento</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Ivana Cappucci</h2>'
+                    );
+                }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">Marcello Di Pietro</h2>'
+                    );
+                }, 1500);
+            }
+            if (event.keyCode == 81) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">realizzazione video di presentazione<br>del Teatro Rossi Aperto</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Peccia Bros</h2>'
+                    );
+                }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">( Carlo e Luigi Peccia )</h2>'
+                    );
+                }, 1500);
+            }
+            if (event.keyCode == 87) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">traduzioni</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Caterina Cavallini</h2>'
+                    );
+                }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">Veronika Chiaffrino</h2>'
+                    );
+                }, 1500);
+            }
+            if (event.keyCode == 69) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft mt-none">selezione cortometraggi</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="inline animate__animated animate__backInUp">Ivana Cappucci</h2>'
+                    );
+                }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Caterina Cavallini</h2>'
+                    );
+                }, 1500);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Veronika Chiaffrino</h2>'
+                    );
+                }, 1750);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Angela D\'Angelo</h2>'
+                    );
+                }, 2000);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Lavinia Di Pierro</h2>'
+                    );
+                }, 2250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Marcello Di Pietro</h2>'
+                    );
+                }, 2500);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Donatella Garramone</h2>'
+                    );
+                }, 2750);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Maurizio Gelli</h2>'
+                    );
+                }, 3000);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Leonardo Gregori</h2>'
+                    );
+                }, 3250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Ivano Luberti</h2>'
+                    );
+                }, 3500);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Michael Maggi</h2>'
+                    );
+                }, 1500);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Marta Mancino</h2>'
+                    );
+                }, 3750);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Michele Orsitto</h2>'
+                    );
+                }, 4000);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Carlo Peccia</h2>'
+                    );
+                }, 4250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Luigi Peccia</h2>'
+                    );
+                }, 4500);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Zoe Maria Pisani</h2>'
+                    );
+                }, 4750);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Anna Romani</h2>'
+                    );
+                }, 5000);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Marco Romeo</h2>'
+                    );
+                }, 5250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Simone Silvestri</h2>'
+                    );
+                }, 5500);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Abramo Tesoro</h2>'
+                    );
+                }, 5750);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="inline animate__animated animate__backInUp">Marco Valtriani</h2>'
+                    );
+                }, 6000);
+            }
+            if (event.keyCode == 82) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInUp").removeClass('animate__backInUp').addClass('animate__backOutDown');
+                setTimeout(function(){
+                    $('.role').html(
+                        '<h2 class="animate__animated animate__backInLeft">presentator*</h2>'
+                    );
+                }, 750);
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Caterina Cavallini</h2>'
+                    );
+                }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">Marco Romeo</h2>'
+                    );
+                }, 1500);
+            }
+            if (event.keyCode == 84) {
+                $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.person').html(
+                        '<h2 class="animate__animated animate__backInRight">Arrivederci alla prossima edizione</h2>'
+                    );
+                }, 500);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">Goodbye, see you next year</h2>'
+                    );
+                }, 750);
+            }82
+        }
+    </script>
+</body>
+
+</html>
