@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+      Trame Indipendenti - Premio del Pubblico
+    </title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/vincitori-2021.css">
+
+    <script src="../assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-white">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 vincitori">
+                <div class="logo">
+
+                </div>
+                <div class="categoria">
+
+                </div>
+            </div>
+            <div class="col-lg-10">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        window.onkeypress = function(event) {
+            if (event.keyCode == 49) {
+                setTimeout(function(){
+                    $('.logo').append(
+                        '<img src="../assets/img/logo-trameindipendenti-big.png" class="logo animate__animated animate__backInUp">'
+                    );
+                }, 1000);
+                setTimeout(function(){
+                    $('.categoria').append(
+                        '<h1 class="title animate__animated animate__bounceInRight">Premio del Pubblico</h1>'
+                    );
+                }, 1500);
+                setTimeout(function(){
+                    $('.categoria').append(
+                        '<h1 class="title animate__animated animate__bounceInRight">Audience</br>Award</h1>'
+                    );
+                }, 2000);
+            }
+            if (event.keyCode == 50) {
+                setTimeout(function(){
+                    $('.col-lg-10').append(
+                        '<div class="row nomination loser"><div class="movieCard movie1 animate__animated animate__flipInY">' +
+                        '<div class="left"><img src="../assets/locandine/2021/roberto.jpg"></div>' +
+                        '<div class="right"><h2 class="card-title">Roberto</h2>' +
+                        '<h3 class="card-author">Carmen Córdoba González</h3></div>'+
+                        '</div></div>'
+                    );
+                }, 10);
+                setTimeout(function(){
+                    $('.col-lg-10').append(
+                        '<div class="row nomination loser"><div class="movieCard movie1 animate__animated animate__flipInY">' +
+                        '<div class="left"><img src="../assets/locandine/2021/mandatory.jpg"></div>' +
+                        '<div class="right"><h2 class="card-title">Mandatory</h2>' +
+                        '<h3 class="card-author">Javad Khorsha</h3></div>'+
+                        '</div></div>'
+                    );
+                }, 1000);
+                setTimeout(function(){
+                    $('.col-lg-10').append(
+                        '<div class="row nomination winner"><div class="movieCard movie1 animate__animated animate__flipInY">' +
+                        '<div class="left"><img src="../assets/locandine/2021/hold-for-appllause.jpg"></div>' +
+                        '<div class="right"><h2 class="card-title">Hold for Applause</h2>' +
+                        '<h3 class="card-author">Gerald B. Fillmore</h3></div>' +
+                        '</div></div>'
+                    );
+                }, 2000);
+
+            }
+            if (event.keyCode == 51) {
+
+                $('.loser').addClass('dissolve');
+                $('.loser').addClass('dissolve');
+                setTimeout(function(){
+                    $('.winner').addClass('big');
+                }, 1000);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
