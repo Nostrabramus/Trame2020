@@ -1,0 +1,159 @@
+html {
+}
+
+body {
+    font-family: Impact, Charcoal, sans-serif;
+    font-weight: 400;
+    color: #eeeeee;
+    overflow: hidden;
+    background: url(../img/bg-2021.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.v-spacer {
+    height: 30px;
+}
+
+.votazioni {
+    margin: 0;
+    text-align: center;
+}
+
+@-webkit-keyframes dissolve {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes dissolve {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.dissolve {
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-duration: calc(var(--animate-duration) * 10);
+    animation-duration: calc(var(--animate-duration) * 10);
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-name: dissolve;
+    animation-name: dissolve;
+}
+
+.votazioni .logo {
+    position: relative;
+    margin: 10px auto 0;
+    height: 180px;
+}
+
+.votazioni .title {
+    display: inline-block;
+    color: #981c1f;
+    font-size: 72px;
+    margin: 20px 30px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,1),-1px 1px 0 rgba(255,255,255,1),1px -1px 0 rgba(255,255,255,1),-1px -1px 0 rgba(255,255,255,1), 1px 1px 3px rgba(0,0,0,0.75);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.votazioni .subtitle {
+    font-size: 56px;
+    color: #333333;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.votazioni .col-lg-8 .subtitle,
+.votazioni .col-lg-8 .subtitle {
+    font-size: 36px;
+    color: #cccccc;
+    margin-top: 50px;
+}
+
+
+@-webkit-keyframes cover {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes cover {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.votationRow {
+    margin-top: 50px;
+}
+
+.counter {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border: 1px solid #999;
+    margin-top: 20px;
+}
+
+.counter {
+    font-size: 72px;
+    color: #eeeeee;
+}
+
+.counter h3 {
+    font-size: 24px;
+    color: #981c1f;
+    margin: 8px 0;
+}
+
+.shortMovies {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.stopVote {
+    margin: 20px;
+    font-size: 90px;
+    color: #333333;
+}
