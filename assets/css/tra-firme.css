@@ -1,0 +1,29 @@
+html {
+}
+
+body {
+    font-family: Impact, Charcoal, sans-serif;
+    font-weight: 400;
+    color: #eeeeee;
+    background-color: #ffffff;
+}
+
+.title {
+    display: inline-block;
+    color: #981c1f;
+    font-size: 72px;
+    margin: 20px 30px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,1),-1px 1px 0 rgba(255,255,255,1),1px -1px 0 rgba(255,255,255,1),-1px -1px 0 rgba(255,255,255,1), 1px 1px 3px rgba(0,0,0,0.75);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.subtitle {
+    font-size: 56px;
+    color: #333333;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}

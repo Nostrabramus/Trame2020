@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abramo Tesoro">
+    <title>
+      Firme - Riaprite il Teatro Rossi
+    </title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/tra-firme.css">
+
+    <script src="../assets/vendors/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div class="bg-white">
+
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-16 header">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 logo">
+            </div>
+            <div class="col-lg-8 qrcode">
+
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    window.onkeypress = function(event) {
+        if (event.keyCode == 49) {
+            $('.logo').html(
+                '<img src="../assets/img/logo_tra.png" class="animate__animated animate__bounceInLeft">'
+            );
+            $('.header').html(
+                '<h1 class="title animate__animated animate__bounceInUp">Riaprite il Teatro Rossi</h1>' +
+                '<h2 class="subtitle animate__animated animate__backInRight">https://riapriteilteatrorossi.it</h2>'
+            );
+            $('.qrcode').html(
+                '<img src="../assets/img/qrcode-firme.png" class="animate__animated animate__bounceInRight">'
+            );
+        }
+    }
+</script>
+
+</body>
+
+</html>
