@@ -32,11 +32,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-11">
-                            <h1 class="title animate__animated animate__bounceInUp">Votazioni</h1><h1 class="title">&nbsp;</h1><h1 class="title animate__animated animate__bounceInUp">Voting</h1>
-                            <div class="votazioni">
-                                <h2 class="subtitle animate__animated animate__backInRight">www.trameindipendenti.it/voto/</h2>
-                            </div>
+                        <div class="col-lg-11 titolo">
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -44,7 +40,7 @@
                     <div class="row">
                         <div class="counterBox col-lg-6">&nbsp;</div>
                         <div class="col-lg-2">&nbsp;</div>
-                        <div class="col-lg-6"><img src="../assets/img/qrcode-voto.png" class="qrcode animate__animated animate__bounceInRight"></div>
+                        <div class="col-lg-6 qrcode"></div>
                     </div>
 
                     <div class="row votationRow">
@@ -73,16 +69,23 @@
         }
 
         setTimeout(function(){
-            $('.logo').html(
-                '<img src="../assets/img/logo-trameindipendenti-big.png" class="logo animate__animated animate__backInUp">'
-            );
-        }, 1000);
-        setTimeout(function(){
             $('.subtitle').removeClass('animate__backInRight').addClass('animate__infinite animate__pulse');
         }, 2000);
         
         window.onkeypress = function(event) {
             if (event.keyCode == 49) {
+                $('.logo').html(
+                    '<img src="../assets/img/logo-trameindipendenti-big.png" class="logo animate__animated animate__backInUp">'
+                );
+                $('.titolo').html(
+                    '<h1 class="title animate__animated animate__bounceInUp">Votazioni</h1><h1 class="title">&nbsp;</h1><h1 class="title animate__animated animate__bounceInUp">Voting</h1>' +
+                    '<div class="votazioni"><h2 class="subtitle animate__animated animate__backInRight">www.trameindipendenti.it/voto/</h2></div>'
+                );
+                $('.qrcode').html(
+                    '<img src="../assets/img/qrcode-voto.png" class="qrcode animate__animated animate__bounceInRight">'
+                );
+            }
+            if (event.keyCode == 50) {
                 $('.counterBox').html(
                     '<div class="counter animate__animated animate__flipInX">' +
                     '<div class="row">' +
@@ -97,7 +100,7 @@
                     '<div class="col-lg-16"><h3>remaining time</h3></div>' +
                     '</div>' +
                     '</div>'
-            );
+                );
 
                 var durataVotazioni = 60 * 10,
                     display = document.querySelector('#time');
@@ -109,8 +112,9 @@
                     $('.hide').first().removeClass('hide').addClass("animate__animated animate__flipInX");
                 }, 500);
             }
-            if (event.keyCode == 50) {
+            if (event.keyCode == 51) {
                 $('.votazioni .animate__pulse').removeClass('animate__infinite animate__pulse').addClass("animate__animated animate__backOutRight");
+                $('.counterBox').addClass("animate__animated animate__backOutRight");
                 $('.qrcode').removeClass('qrcode animate__animated animate__bounceInRight').addClass("animate__animated animate__backOutRight");
                 $('.votationRow').html(
                     '<h1 class="stopVote animate__animated animate__lightSpeedInLeft">Stop Voto</h1>' +
