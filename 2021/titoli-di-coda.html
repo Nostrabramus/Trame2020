@@ -33,6 +33,11 @@
                         <div class="role"></div>
                         <div class="person"></div>
                     </div>
+                    <div class="row partnerpatro">
+                        <div class="partner role"></div>
+                        <div class="left col-lg-6 text-right"></div>
+                        <div class="right col-lg-10 text-left"></div>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -42,12 +47,55 @@
     <script>
         setTimeout(function(){
             $('.logo').html(
-                '<div class="box-logo"><img src="../assets/img/logo-trameindipendenti-big.png" class="logo-img animate__animated animate__backInUp"></div>'
+                '<div class="box-logo animate__animated animate__backInUp"><img src="../assets/img/logo-trameindipendenti-big.png" class="logo-img"></div>'
             );
         }, 1000);
 
         window.onkeypress = function(event) {
             if (event.keyCode == 49) {
+                $(".partnerpatro").remove();
+
+                setTimeout(function(){
+                    $('.partner').html(
+                        '<h2 class="animate__animated animate__backInUp mt-5 mb-5">in collaborazione con</h2>'
+                    );
+                }, 0);
+                setTimeout(function(){
+                    $('.left').html(
+                        '<img src="../assets/img/logo-cinemaarsenale.jpg" class="animate__animated animate__backInLeft">'
+                    );
+                }, 500);
+                setTimeout(function(){
+                    $('.right').html(
+                        '<img src="../assets/img/logo-centrostudicommediaitaliana.png" class="animate__animated animate__backInRight">'
+                    );
+                }, 750);
+            }
+            if (event.keyCode == 50) {
+                $(".partnerpatro .animate__backInUp").removeClass('animate__backInUp').addClass('animate__backOutUp');
+                $(".partnerpatro .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".partnerpatro .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                setTimeout(function(){
+                    $('.partner').html(
+                        '<h2 class="animate__animated animate__backInUp mt-5 mb-5">patrocini</h2>'
+                    );
+                }, 0);
+                setTimeout(function(){
+                    $('.left').html(
+                        '<h2 class="animate__animated animate__backInLeft">Rosignano Marittimo</h2>'
+                    );
+                }, 590);
+                setTimeout(function(){
+                    $('.right').html(
+                        '<h2 class="animate__animated animate__backInRight">Volterra</h2>'
+                    );
+                }, 750);
+            }
+            if (event.keyCode == 51) {
+                $(".partnerpatro .animate__backInUp").removeClass('animate__backInUp').addClass('animate__backOutUp');
+                $(".partnerpatro .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
+                $(".partnerpatro .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft mt-5">direzione artistica</h2>'
@@ -59,9 +107,10 @@
                     );
                 }, 500);
             }
-            if (event.keyCode == 50) {
+            if (event.keyCode == 52) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft mt-5">regia</h2>'
@@ -73,26 +122,33 @@
                     );
                 }, 1250);
             }
-            if (event.keyCode == 51) {
+            if (event.keyCode == 53) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
-                        '<h2 class="animate__animated animate__backInLeft mt-5">aiuto regia e tecnica</h2>'
+                        '<h2 class="animate__animated animate__backInLeft mt-5">tecnica</h2>'
                     );
                 }, 750);
                 setTimeout(function(){
                     $('.person').html(
-                        '<h2 class="animate__animated animate__backInRight">Maurizio Gelli</h2>'
+                        '<h2 class="animate__animated animate__backInRight">Gianfabio Bianco</h2>'
                     );
                 }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">Maurizio Gelli</h2>'
+                    );
+                }, 1500);
             }
-            if (event.keyCode == 52) {
+            if (event.keyCode == 54) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
-                        '<h2 class="animate__animated animate__backInLeft mt-5">cameraman</h2>'
+                        '<h2 class="animate__animated animate__backInLeft mt-5">riprese video</h2>'
                     );
                 }, 750);
                 setTimeout(function(){
@@ -101,7 +157,7 @@
                     );
                 }, 1250);
                 setTimeout(function(){
-                    $('.person').html(
+                    $('.person').append(
                         '<h2 class="animate__animated animate__backInRight">Luigi Peccia</h2>'
                     );
                 }, 1500);
@@ -111,9 +167,10 @@
                     );
                 }, 1750);
             }
-            if (event.keyCode == 53) {
+            if (event.keyCode == 55) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft mt-5">traduzioni e sottotitoli</h2>'
@@ -132,26 +189,28 @@
                 setTimeout(function(){
                     $('.person').append(
                         '<h2 class="animate__animated animate__backInRight">Marco Valtriani</h2>'
-                );
+                    );
                 }, 1750);
             }
-            if (event.keyCode == 54) {
+            if (event.keyCode == 56) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
-                        '<h2 class="animate__animated animate__backInLeft mt-5">tecnico audio</h2>'
+                        '<h2 class="animate__animated animate__backInLeft mt-5">proiezione</h2>'
                     );
                 }, 750);
                 setTimeout(function(){
                     $('.person').html(
-                        '<h2 class="animate__animated animate__backInRight">Maurizio Gelli</h2>'
+                        '<h2 class="animate__animated animate__backInRight">Marco Borghetti</h2>'
                     );
                 }, 1250);
             }
-            if (event.keyCode == 55) {
+            if (event.keyCode == 57) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft mt-5">grafica e animazioni</h2>'
@@ -163,9 +222,10 @@
                     );
                 }, 1250);
             }
-            if (event.keyCode == 56) {
+            if (event.keyCode == 48) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft mt-5">comunicazione</h2>'
@@ -192,9 +252,10 @@
                     );
                 }, 2250);
             }
-            if (event.keyCode == 57) {
+            if (event.keyCode == 81) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft mt-5">organizzazione</h2>'
@@ -231,9 +292,10 @@
                     );
                 }, 2500);
             }
-            if (event.keyCode == 48) {
+            if (event.keyCode == 87) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft mt-5">allestimento</h2>'
@@ -243,31 +305,27 @@
                     $('.person').html(
                         '<h2 class="animate__animated animate__backInRight">Ivana Cappucci</h2>'
                     );
-                }, 1250);
+                }, 1000);
                 setTimeout(function(){
                     $('.person').append(
                         '<h2 class="animate__animated animate__backInRight">Francesca Ghezzi</h2>'
                     );
+                }, 1250);
+                setTimeout(function(){
+                    $('.person').append(
+                        '<h2 class="animate__animated animate__backInRight">Francesco Ferro</h2>'
+                    );
                 }, 1500);
                 setTimeout(function(){
                     $('.person').append(
-                        '<h2 class="animate__animated animate__backInRight">Francesco </h2>'
+                        '<h2 class="animate__animated animate__backInRight">Marcello Di Pietro</h2>'
                     );
                 }, 1750);
-                setTimeout(function(){
-                    $('.person').append(
-                        '<h2 class="animate__animated animate__backInRight">Marcello Di Pietro</h2>'
-                    );
-                }, 2000);
-                setTimeout(function(){
-                    $('.person').append(
-                        '<h2 class="animate__animated animate__backInRight">Marcello Di Pietro</h2>'
-                    );
-                }, 2250);
             }
-            if (event.keyCode == 81) {
+            if (event.keyCode == 69) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
                         '<h2 class="animate__animated animate__backInLeft">selezione cortometraggi</h2>'
@@ -384,12 +442,13 @@
                     );
                 }, 6250);
             }
-            if (event.keyCode == 87) {
+            if (event.keyCode == 82) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInUp").removeClass('animate__backInUp').addClass('animate__backOutDown');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.role').html(
-                        '<h2 class="animate__animated animate__backInLeft">presentatrice</h2>'
+                        '<h2 class="animate__animated animate__backInLeft mt-5">presentatrice</h2>'
                     );
                 }, 750);
                 setTimeout(function(){
@@ -398,9 +457,10 @@
                     );
                 }, 1250);
             }
-            if (event.keyCode == 69) {
+            if (event.keyCode == 84) {
                 $(".titoli .animate__backInLeft").removeClass('animate__backInLeft').addClass('animate__backOutRight');
                 $(".titoli .animate__backInRight").removeClass('animate__backInRight').addClass('animate__backOutLeft');
+                $(".partnerpatro").remove();
                 setTimeout(function(){
                     $('.person').html(
                         '<h2 class="animate__animated animate__backInRight">Arrivederci alla prossima edizione</h2>'
